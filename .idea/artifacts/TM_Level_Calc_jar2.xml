@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TM_Level_Calc:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/TM_Level_Calc_jar2</output-path>
+    <root id="archive" name="TM_Level_Calc.jar" />
+  </artifact>
+</component>
