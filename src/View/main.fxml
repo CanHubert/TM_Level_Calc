@@ -32,7 +32,7 @@
                      </VBox.margin>
                   </Label>
                     <NumberTextField fx:id="cardsTextField" maxWidth="100.0" />
-                  <Button id="confirmButton" fx:id="confrimButton" mnemonicParsing="false" onAction="#calculateMonsterLevel" text="Oblicz">
+                  <Button  fx:id="confrimButton" mnemonicParsing="false" onAction="#calculateMonsterLevel" text="Oblicz">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>
@@ -46,8 +46,8 @@
                       </children>
             </VBox>
 
-
          </children>
+          <Button fx:id="languages" prefWidth="150.0" onAction="#onSelect"/>
       </HBox>
    </children>
 </AnchorPane>

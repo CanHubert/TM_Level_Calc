@@ -6,7 +6,7 @@ public class CPNeededBusiness {
     private static String result;
     private static int cpNeeded;
 
-    public static String calculateCPToTargetLv(int lv, int collectedCards, String rarity, int targetLv){
+    public static String calculateCPToTargetLv(int lv, int collectedCards, EnumRarity rarity, int targetLv){
         clean();
         if(lv < 23 && targetLv <=23 && targetLv> lv)
         {

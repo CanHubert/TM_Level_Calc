@@ -6,7 +6,7 @@ public class CPUpgreadeBusiness {
     private static  String result;
     private static int cpUsed =0;
 
-    public static String upgreadeUsingCP(int lv, int collectedCards, String rarity, int cpCollected){
+    public static String upgreadeUsingCP(int lv, int collectedCards, EnumRarity rarity, int cpCollected){
         cpUsed=0;
         if(lv < 23)
         {
@@ -57,8 +57,8 @@ public class CPUpgreadeBusiness {
     }
 
     public static void main(String[] args) {
-        System.out.println(upgreadeUsingCP(15,14,"Legendarny", 178000));
-        System.out.println(upgreadeUsingCP(9,100,"Legendarny", 0));
-        System.out.println(upgreadeUsingCP(20,132,"Monstrualny", 155200));
+        System.out.println(upgreadeUsingCP(15,14,EnumRarity.Legendary, 178000));
+        System.out.println(upgreadeUsingCP(9,100,EnumRarity.Legendary, 0));
+        System.out.println(upgreadeUsingCP(20,132,EnumRarity.Monstrous, 155200));
     }
 }

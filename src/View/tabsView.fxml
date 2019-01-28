@@ -8,21 +8,21 @@
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-            <Tab text="Dostepny lv postaci">
+            <Tab fx:id="tab1">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
                   <fx:include source="main.fxml"/>
                 </AnchorPane>
               </content>
             </Tab>
-          <Tab text="Koszt Cp">
+          <Tab fx:id="tab2">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                 <fx:include source="cpUpgreade.fxml"/>
               </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Potrzebne CP">
+          <Tab fx:id="tab3">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
                 <fx:include source="cpNeeded2.fxml"/>

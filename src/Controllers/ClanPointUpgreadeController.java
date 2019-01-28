@@ -1,7 +1,7 @@
 package Controllers;
 
-import Business.App;
-import Business.EnumRarity;
+import Tools.Messages;
+import Tools.UpdateHelper;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -19,9 +19,16 @@ public class ClanPointUpgreadeController extends BaseController{
 
     @Override
     public void initialize() {
-        super.initialize();
-        clanPointsLabel.setText("Zebrane CP:");
+        update();
         clanPointsTextField.setText("0");
+        addObjectsToMap();
+    }
+
+    private void addObjectsToMap(){
+        UpdateHelper.objectsToUpdate.put("tab2.main.lvLabel", lvLabel);
+        UpdateHelper.objectsToUpdate.put("tab2.main.cardsLabel", cardsLabel);
+        UpdateHelper.objectsToUpdate.put("tab2.main.confirmButton", confrimButton);
+        UpdateHelper.objectsToUpdate.put("tab2.CPUpgreade.mainLabel", clanPointsLabel);
     }
 
     public void calculateCPUpgreade(){
@@ -34,7 +41,9 @@ public class ClanPointUpgreadeController extends BaseController{
         }
         else
         {
-            resultLabel.setText(WRONG_LV);
+            resultLabel.setText(Messages.getMessage("tab2.main.wrongLv"));
         }
     }
+
+
 }

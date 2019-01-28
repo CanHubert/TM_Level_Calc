@@ -45,7 +45,7 @@ public class App {
 
     }
 
-    static public String possibleLv(int lv, int collectedCards, String rarity){
+    static public String possibleLv(int lv, int collectedCards, EnumRarity rarity){
         STARTING_LV = lv;
 
 
@@ -71,7 +71,7 @@ public class App {
         return result;
     }
 
-    static private void possibleLv(int lv, int collectedCards, String rarity, int goldCosts){
+    static private void possibleLv(int lv, int collectedCards, EnumRarity rarity, int goldCosts){
 
         if(lv < 23)
         {

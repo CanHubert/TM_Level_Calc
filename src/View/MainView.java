@@ -1,18 +1,13 @@
 package View;
 
+import Tools.Messages;
+import Tools.UpdateHelper;
 import javafx.application.Application;
-import javafx.application.Platform;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -36,9 +31,10 @@ public class MainView extends Application{
         }
 
 
-        primaryStage.setTitle("Tactical Monsters - Kalkulator");
+        primaryStage.setTitle(Messages.getMessage("main.stageHeader"));
         primaryStage.setScene(new Scene(root, 600, 500));
         primaryStage.show();
+        UpdateHelper.objectsToUpdate.put("stageHeader", primaryStage);
     }
 
     public static void main(String[] args) {

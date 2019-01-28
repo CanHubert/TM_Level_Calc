@@ -1,14 +1,16 @@
 package Business;
 
+import Tools.Messages;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public enum EnumRarity {
-    Common("Zwykły"),
-    Epic("Epicki"),
-    Monstrous("Monstrualny"),
-    Legendary("Legendarny");
+    Common("common"),
+    Epic("epic"),
+    Monstrous("monstrous"),
+    Legendary("legendary");
 
     String name;
 
@@ -17,10 +19,14 @@ public enum EnumRarity {
     }
 
     static public List<String> getRarities(){
-        return Stream.of(EnumRarity.values()).map(e-> e.name).collect(Collectors.toList());
+        return Stream.of(EnumRarity.values()).map(EnumRarity::getLabel).collect(Collectors.toList());
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getLabel(){
+        return Messages.getMessage("rarities."+ name);
     }
 }

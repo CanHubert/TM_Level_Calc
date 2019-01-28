@@ -4,6 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import Models.NumberTextField?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClanPointsNeededController">
    <children>
       <HBox AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
@@ -19,17 +20,17 @@
                         <Insets top="5.0" />
                      </VBox.margin>
                   </Label>
-                    <TextField fx:id="lvTextField" maxWidth="100.0">
+                    <NumberTextField fx:id="lvTextField" maxWidth="100.0">
                      <VBox.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </VBox.margin>
-                  </TextField>
+                  </NumberTextField>
                     <Label fx:id="cardsLabel">
                      <VBox.margin>
                         <Insets bottom="5.0" top="5.0" />
                      </VBox.margin>
                   </Label>
-                    <TextField fx:id="cardsTextField" maxWidth="100.0" />
+                    <NumberTextField fx:id="cardsTextField" maxWidth="100.0" />
                   <Button id="confirmButton" fx:id="confrimButton" mnemonicParsing="false" onAction="#calculateCPToTargetLv" text="Oblicz">
                      <VBox.margin>
                         <Insets top="20.0" />
