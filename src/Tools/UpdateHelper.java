@@ -53,22 +53,5 @@ public class UpdateHelper {
                 comboBox.getSelectionModel().selectFirst();
             }
         }
-
-//        keys.forEach(k -> {
-//            Object ob = objectsToUpdate.get(k);
-//
-//            if(ob instanceof Label){
-//                ((Label) ob).setText(labelsMap.get(k.substring(k.indexOf(".")+1)));
-//            }
-//            else if(ob instanceof Button){
-//                ((Button) ob).setText(labelsMap.get(k.substring(k.indexOf(".")+1)));
-//            }
-//            else if(ob instanceof ComboBox){
-//                ComboBox<String> comboBox = (ComboBox<String>)ob;
-//                comboBox.getItems().clear();
-//                comboBox.getItems().addAll(EnumRarity.getRarities());
-//                comboBox.getSelectionModel().selectFirst();
-//            }
-//        });
     }
 }
