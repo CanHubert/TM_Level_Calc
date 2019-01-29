@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Background;
 
 public class BaseController {
 
@@ -49,5 +50,6 @@ public class BaseController {
         rarityComboBox.getItems().clear();
         rarityComboBox.getItems().addAll(EnumRarity.values());
         rarityComboBox.getSelectionModel().selectFirst();
+
     }
 }

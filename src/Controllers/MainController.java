@@ -27,6 +27,8 @@ public class MainController extends BaseController{
                     rarityComboBox.getSelectionModel().getSelectedItem()));
         else
             resultLabel.setText(Messages.getMessage("main.wrongLv"));
+
+        resultLabel.setStyle(Messages.getMessage("css.resultStyle"));
     }
 
     private void addObjectsToMap(){

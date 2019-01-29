@@ -28,6 +28,8 @@ public class ClanPointsNeededController extends BaseController{
         UpdateHelper.objectsToUpdate.put("tab3.main.cardsLabel", cardsLabel);
         UpdateHelper.objectsToUpdate.put("tab3.main.confirmButton", confrimButton);
         UpdateHelper.objectsToUpdate.put("tab3.CPNeeded.mainLabel", targetLvLabel);
+        UpdateHelper.objectsToUpdate.put("tab3.rarityComboBox", rarityComboBox);
+
     }
 
     public void calculateCPToTargetLv(){
@@ -44,6 +46,7 @@ public class ClanPointsNeededController extends BaseController{
         {
             resultLabel.setText(Messages.getMessage("main.wrongLv"));
         }
+        resultLabel.setStyle(Messages.getMessage("css.resultStyle"));
     }
 
     private boolean validTargetLv(){

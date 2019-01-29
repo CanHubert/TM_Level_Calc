@@ -34,7 +34,7 @@ public class MainView extends Application{
         primaryStage.setTitle(Messages.getMessage("main.stageHeader"));
         primaryStage.setScene(new Scene(root, 600, 500));
         primaryStage.show();
-        UpdateHelper.objectsToUpdate.put("stageHeader", primaryStage);
+        UpdateHelper.objectsToUpdate.put("main.main.stageHeader", primaryStage);
     }
 
     public static void main(String[] args) {

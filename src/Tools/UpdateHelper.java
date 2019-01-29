@@ -19,16 +19,16 @@ public class UpdateHelper {
 
     public static void initLabelsMap(){
         labelsMap = new HashMap<>();
-        labelsMap.put("main.lvLabel", Messages.getMessage("main.lvLabel"));
-        labelsMap.put("main.cardsLabel", Messages.getMessage("main.cardsLabel"));
-        labelsMap.put("main.confirmButton", Messages.getMessage("main.confirmButton"));
-        labelsMap.put("CPNeeded.mainLabel", Messages.getMessage("CPNeeded.mainLabel"));
-        labelsMap.put("CPUpgreade.mainLabel", Messages.getMessage("CPUpgreade.mainLabel"));
-        labelsMap.put("main.language", Messages.getMessage("main.language"));
-        labelsMap.put("tabs.tab1", Messages.getMessage("tabs.tab1"));
-        labelsMap.put("tabs.tab2", Messages.getMessage("tabs.tab2"));
-        labelsMap.put("tabs.tab3", Messages.getMessage("tabs.tab3"));
-        labelsMap.put("main.stageHeader", Messages.getMessage("main.stageHeader"));
+        labelsMap.put("main.lvLabel",           "main.lvLabel");
+        labelsMap.put("main.cardsLabel",        "main.cardsLabel");
+        labelsMap.put("main.confirmButton",     "main.confirmButton");
+        labelsMap.put("CPNeeded.mainLabel",     "CPNeeded.mainLabel");
+        labelsMap.put("CPUpgreade.mainLabel",   "CPUpgreade.mainLabel");
+        labelsMap.put("main.languages",         "main.language");
+        labelsMap.put("tabs.tab1",              "tabs.tab1");
+        labelsMap.put("tabs.tab2",              "tabs.tab2");
+        labelsMap.put("tabs.tab3",              "tabs.tab3");
+        labelsMap.put("main.stageHeader",       "main.stageHeader");
 
     }
 
@@ -39,7 +39,7 @@ public class UpdateHelper {
         List<String> keys = new ArrayList<>(objectsToUpdate.keySet());
         for(String k : keys){
             Object ob = objectsToUpdate.get(k);
-            String msg = labelsMap.get(k.substring(k.indexOf(".")+1));
+            String msg = Messages.getMessage(labelsMap.get(k.substring(k.indexOf(".")+1)));
             if(ob instanceof Label){
                 ((Label) ob).setText(msg);
             }

@@ -29,6 +29,8 @@ public class ClanPointUpgreadeController extends BaseController{
         UpdateHelper.objectsToUpdate.put("tab2.main.cardsLabel", cardsLabel);
         UpdateHelper.objectsToUpdate.put("tab2.main.confirmButton", confrimButton);
         UpdateHelper.objectsToUpdate.put("tab2.CPUpgreade.mainLabel", clanPointsLabel);
+        UpdateHelper.objectsToUpdate.put("tab2.rarityComboBox", rarityComboBox);
+
     }
 
     public void calculateCPUpgreade(){
@@ -43,6 +45,7 @@ public class ClanPointUpgreadeController extends BaseController{
         {
             resultLabel.setText(Messages.getMessage("tab2.main.wrongLv"));
         }
+        resultLabel.setStyle(Messages.getMessage("css.resultStyle"));
     }
 
 

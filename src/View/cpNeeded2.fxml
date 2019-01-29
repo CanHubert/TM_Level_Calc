@@ -52,7 +52,7 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="resultLabel" text="Wynik" >
+                  <Label fx:id="resultLabel" >
                     <HBox.margin>
                         <Insets top="20"/>
                     </HBox.margin>
