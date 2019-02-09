@@ -2,9 +2,7 @@
   <artifact type="jar" name="TM_Level_Calc:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/TM_Level_Calc_jar</output-path>
     <root id="archive" name="TM_Level_Calc.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      </element>
+      <element id="module-output" name="TM_Level_Calc" />
     </root>
   </artifact>
 </component>
